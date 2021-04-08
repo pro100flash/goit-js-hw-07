@@ -9,8 +9,8 @@ const ingredients = [
 
 
 const ingredientsList = ingredients.map(food => {
-  const list = document.createElement('li');
-  list.textContent = food;
+  const li = document.createElement('li');
+  li.textContent = food;
   
   return food;
 });
