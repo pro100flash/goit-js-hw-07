@@ -7,6 +7,13 @@ const ingredients = [
     'Приправы',
   ];
 
-const ingredientsRef = document.querySelector('#ingredients');
 
-const ulList = document.createElement('li');
+const ingredientsList = ingredients.map(food => {
+  const list = document.createElement('li');
+  list.textContent = food;
+  
+  return food;
+});
+document.querySelector('#ingredients').append(...ingredientsList);
+
+console.log(ingredientsList);
