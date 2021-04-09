@@ -17,7 +17,11 @@ const images = [
   ];
 
 
-let markup = ``;
+// let src = ``;
+// images.forEach(image => (src += `<li> <img src= ${image.url} ${image.alt} width = 620;/> </li>`));
 
-images.forEach(image => (markup += `<li> <img src='${image.url} '${image.alt}' width = 620;/> </li>`));
-document.querySelector('#gallery').insertAdjacentHTML('beforeend', markup);
+// document.querySelector('#gallery').insertAdjacentHTML('beforeend', src);
+
+for(let element of images) document
+.querySelector('#gallery')
+.insertAdjacentHTML('beforeend', `<li><img src="${element.url}" alt="${element.alt}" width = 600></li>`);
