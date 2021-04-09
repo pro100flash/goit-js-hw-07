@@ -16,6 +16,12 @@ const images = [
     },
   ];
 
-for(let element of images) document
+// for(let element of images) document
+// .querySelector('#gallery')
+// .insertAdjacentHTML('beforeend', `<li><img src="${element.url}" alt="${element.alt}" width = 600></li>`);
+
+  images.map(image => {
+  document
 .querySelector('#gallery')
-.insertAdjacentHTML('beforeend', `<li><img src="${element.url}" alt="${element.alt}" width = 600></li>`);
+.insertAdjacentHTML('beforeend', `<li><img src="${image.url}" alt="${image.alt}" width = 600></li>`);
+});
