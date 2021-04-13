@@ -18,7 +18,7 @@ const images = [
 
   const ulList = document.querySelector('#gallery');
 
-const pictures = images.map(image => {
+  const pictures = images.map(image => {
   return 'beforeend', `<li><img src="${image.url}" alt="${image.alt}" width = 600></li>`;
 });
 
