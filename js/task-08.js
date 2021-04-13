@@ -1,8 +1,8 @@
 const refs = {
     render: document.querySelector('button[data-action="render"]'),
     destroy:  document.querySelector('button[data-action="destroy"]'),
-    boxes: document.getElementById('boxes'),
-    input: document.getElementById('controls input')
+    boxes: document.querySelector('#boxes'),
+    input: document.querySelector('#controls input')
 };
 
 function createBoxes(amount) {
