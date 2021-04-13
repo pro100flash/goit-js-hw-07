@@ -1,18 +1,17 @@
-const inputValidation = document.getElementById('validation-input');
+const inputValidation = document.querySelector('#validation-input');
 const inputCount = inputValidation.getAttribute('data-length');
 
-function checkValidation() {
+function checkValidation(event) {
 
-    if (inputValidation.value.length >= inputCount) {
-        inputValidation.classList.add('valid');
+    if (Number(inputValidation.dataset.length) === event.target.value.length) {
         inputValidation.classList.remove('invalid');
+        inputValidation.classList.add('valid');
         console.log('valid')
     }   else {
-        inputValidation.classList.add('invalid');
         inputValidation.classList.remove('valid');
+        inputValidation.classList.add('invalid');
         console.log('invalid')
     }
 };
 
 inputValidation.addEventListener('blur', checkValidation);
-

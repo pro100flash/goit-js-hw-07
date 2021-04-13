@@ -16,12 +16,10 @@ const images = [
     },
   ];
 
-// for(let element of images) document
-// .querySelector('#gallery')
-// .insertAdjacentHTML('beforeend', `<li><img src="${element.url}" alt="${element.alt}" width = 600></li>`);
+  const ulList = document.querySelector('#gallery');
 
-  images.map(image => {
-  document
-.querySelector('#gallery')
-.insertAdjacentHTML('beforeend', `<li><img src="${image.url}" alt="${image.alt}" width = 600></li>`);
+const pictures = images.map(image => {
+  return 'beforeend', `<li><img src="${image.url}" alt="${image.alt}" width = 600></li>`;
 });
+
+ulList.insertAdjacentHTML('beforeend', pictures.join(''));
