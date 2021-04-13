@@ -1,5 +1,4 @@
 const inputValidation = document.querySelector('#validation-input');
-const inputCount = inputValidation.getAttribute('data-length');
 
 function checkValidation(event) {
 
