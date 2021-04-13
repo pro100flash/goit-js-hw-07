@@ -16,7 +16,7 @@ function createBoxes(amount) {
         '#' + (((1 << 24) * Math.random()) | 0).toString(16);
         newArray.push(newDiv);
     }
-    refs.boxex.append(...newArray);
+    refs.boxes.append(...newArray);
 };
 
 function destroyBoxes() {
